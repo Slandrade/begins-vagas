@@ -6,6 +6,7 @@ Esta é uma API Rest com objetivo de cadastrar vagas e permitir que os candidato
 Esta API foi desenvolvida utilizando Java 21 e o framework Spring Boot.<br/>
 Os testes unitários foram feitos utilizando JUnit 5 e Mockito.<br/>
 Foi utilizado o Banco de Dados PostegreSQL para armazenamento dos dados.<br/>
+Para trazer mais qualidade nos testes unitários, foi utilizado também o PIT Mutation Testing, para gerar cenários de mutação.<br/>
 
 ### <h2>Requisitos iniciais</h2>
 
