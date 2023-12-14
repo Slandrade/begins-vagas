@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "a90c31b5-3dfb-4b13-bb5d-70ef49aa6389",
+		"name": "Begins Vagas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12520131"
+	},
+	"item": [
+		{
+			"name": "vagas",
+			"item": [
+				{
+					"name": "buscar vagas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/?page=1&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "criar vaga",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantidadeVagas\": 5,\r\n    \"titulo\": \"vaga desenvolvedor java\",\r\n    \"descricao\": \"vaga para desenvolvedor java\",\r\n    \"requisitos\": \"3 anos de experiência\",\r\n    \"nivelExperiencia\": \"PL\",\r\n    \"tipoVaga\": \"PJ\",\r\n    \"beneficios\": \"VA, VR, VT, Gympass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/criar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"criar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar vaga",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantidadeVagas\": 5,\r\n    \"titulo\": \"vaga desenvolvedor java\",\r\n    \"descricao\": \"vaga para desenvolvedor java\",\r\n    \"requisitos\": \"3 anos de experiência\",\r\n    \"nivelExperiencia\": \"PL\",\r\n    \"tipoVaga\": \"PJ\",\r\n    \"beneficios\": \"VA, VR, VT, Gympass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/atualizar/{idVaga}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"atualizar",
+								"{idVaga}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reativar vaga",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/reativar/{idVaga}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"reativar",
+								"{idVaga}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inativar vaga",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/inativar/{idVaga}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"inativar",
+								"{idVaga}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar vaga",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/deletar/{idVaga}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"deletar",
+								"{idVaga}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar todas vagas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vagas/deletar-todas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vagas",
+								"deletar-todas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "candidatos",
+			"item": [
+				{
+					"name": "buscar candidatos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidatos/?page=1&size=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidatos",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "criar candidato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"John Doe\",\r\n    \"email\": \"email@dominio.com\",\r\n    \"telefone\": \"3112345678\",\r\n    \"rg\": \"31313131\",\r\n    \"cpf\": \"12312312312\",\r\n    \"experiencia\": \"java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidatos/criar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidatos",
+								"criar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar candidato",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"John Doe\",\r\n    \"email\": \"email@dominio.com\",\r\n    \"telefone\": \"3112345678\",\r\n    \"rg\": \"31313131\",\r\n    \"cpf\": \"12312312312\",\r\n    \"experiencia\": \"java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidatos/atualizar/{idCandidato}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidatos",
+								"atualizar",
+								"{idCandidato}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar candidato",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidatos/deletar/{idCandidato}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidatos",
+								"deletar",
+								"{idCandidato}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletar todos candidatos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidatos/deletar-todos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidatos",
+								"deletar-todos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Candidaturas",
+			"item": [
+				{
+					"name": "criar candidatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"candidato\": {\r\n        \"idCandidato\": \"Crie um candidato e coloque o UUID aqui\"\r\n    },\r\n    \"vaga\": {\r\n        \"idVaga\": \"Crie uma vaga e coloque o UUID aqui\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/candidaturas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"candidaturas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
