@@ -36,4 +36,4 @@ Para executar localmente:
 4. Na pasta _/target/_ execute o comando **java -jar vagas-0.0.1-SNAPSHOT.jar**.
 
 Após realizar estes passos, a aplicação estará rodando e será possível testá-la localmente utilizando sua plataforma de envio de requisição para API desejada.
-Uma collection com todas as requisições de teste pode ser encontrada na raiz do projeto.
+Uma collection com todas as requisições de teste pode ser encontrada [aqui](https://github.com/Slandrade/begins-vagas/blob/master/Begins%20Vagas.collection.json).
